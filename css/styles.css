@@ -183,7 +183,7 @@ img {
 }
 
 .profit-list-item {
-  width: calc((100%- (3 * 24px)) / 4); /**/
+  width: calc((100% - (3 * 24px)) / 4); /**/
 }
 
 .title-cluster {
@@ -218,7 +218,7 @@ img {
 .team-list-item {
   background-color: white;
   text-align: center;
-  width: calc((100%- (3 * 24px)) / 4);
+  width: calc((100% - (3 * 24px)) / 4);
   height: 380px;
   border-radius: 6px;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
@@ -243,25 +243,21 @@ img {
 
 .briefcase-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  /*flex-direction: column;/**/
   justify-content: center;
   gap: 24px;
 }
 
-.briefcase-list-row {
-  display: flex;
-  gap: 24px;
-}
-
 .briefcase-list-item {
-  width: calc((100%- (2 * 24px)) / 3);
+  width: calc((100% - (2 * 24px)) / 3);
 }
 
 .briefcase-list-item-text {
   border-bottom: 1px solid rgba(231, 233, 252, 1);
   border-left: 1px solid rgba(231, 233, 252, 1);
   border-right: 1px solid rgba(231, 233, 252, 1);
-  padding-left: 16px;
+  /*padding-left: 16px;/**/
   height: 120px;
   display: flex;
   flex-direction: column;
