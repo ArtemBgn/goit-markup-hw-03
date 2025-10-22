@@ -40,13 +40,19 @@ img {
 
 .container {
   max-width: 1158px;
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 15px;
+  /*padding-left: 0;/**/
+  /*padding-right: 0;/**/
+  margin-left: auto; /**/
+  margin-right: auto; /**/
 }
 
-.container-header {
+.chairman {
+  /*padding: 120px 0;/**/
+  border-bottom: 1px solid #e7e9fc;
+}
+
+header .container {
   display: flex;
   justify-content: space-around;
   padding-top: 24px;
@@ -61,8 +67,8 @@ img {
   color: #4d5ae5;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  padding-right: 76px; /*або так або маржин*/
-  /*margin-right: 76px; /*переробити значення відступу*/
+  display: inline-block;
+  margin-right: 76px;
 }
 
 .logo-half {
@@ -72,6 +78,7 @@ img {
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-list {
@@ -84,6 +91,7 @@ img {
   font-size: 16px;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 
 .navbar-list-item-link:focus,/**/
@@ -117,10 +125,11 @@ img {
 
 .heading {
   background-color: #2e2f42;
-  height: 600px;
+  /*height: 600px; /**/
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 188px 0; /**/
   /*text-align: center;/**/
 }
 
@@ -131,8 +140,7 @@ img {
   text-align: center;
   line-height: 1.07;
   letter-spacing: 0.02em;
-  width: 496px; /*переробити значення відступу*/
-  /*margin-bottom: 48px;/**/
+  max-width: 496px;
 }
 
 .heading-order {
@@ -146,7 +154,7 @@ img {
   cursor: pointer;
   display: block;
   height: 56px;
-  width: 169px;
+  min-width: 169px;
   border-radius: 4px;
   border: 0;
   margin-top: 48px;
@@ -161,7 +169,7 @@ img {
 }
 
 .profit {
-  padding: 120px 156px;
+  padding: 120px 0;
 }
 
 .profit .title-cluster {
@@ -203,11 +211,12 @@ img {
   line-height: 1.2;
   color: #2e2f42;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .team {
   background-color: #f4f4fd;
-  padding: 120px 156px;
+  padding: 120px 0;
 }
 
 .team-list {
@@ -219,18 +228,16 @@ img {
   background-color: white;
   text-align: center;
   width: calc((100% - (3 * 24px)) / 4);
-  height: 380px;
-  border-radius: 6px;
+  border-radius: 0px 0px 4px 4px;
   box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .team-list-item-text {
-  height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
+  padding: 32px 0;
 }
 
 .text {
@@ -238,15 +245,15 @@ img {
 }
 
 .briefcase {
-  padding: 120px 156px;
+  padding: 120px 0;
 }
 
 .briefcase-list {
   display: flex;
   flex-wrap: wrap;
-  /*flex-direction: column;/**/
   justify-content: center;
-  gap: 24px;
+  gap: 24px; /**/
+  row-gap: 48px;
 }
 
 .briefcase-list-item {
@@ -257,25 +264,27 @@ img {
   border-bottom: 1px solid rgba(231, 233, 252, 1);
   border-left: 1px solid rgba(231, 233, 252, 1);
   border-right: 1px solid rgba(231, 233, 252, 1);
-  /*padding-left: 16px;/**/
-  height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 8px;
+  padding: 32px 16px;
 }
 
 .vault {
   background-color: #2e2f42;
-  padding: 100px 156px;
+  padding: 100px 0;
 }
 
 .vault .logo .logo-half {
   color: #f4f4fd;
+  margin-bottom: 16px;
+}
+
+.vault .logo {
+  margin-bottom: 16px;
 }
 
 .vault .text {
   color: #f4f4fd;
   width: 264px;
-  margin-top: 16px;
 }
